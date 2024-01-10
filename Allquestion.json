@@ -1,0 +1,82 @@
+[
+  {
+    "ques": "A programming language known for its simplicity and readability.",
+    "anser": "PYTHON"
+  },
+  {
+    "ques": "An operating system developed by Microsoft.",
+    "anser": "WINDOWS"
+  },
+  {
+    "ques": "A widely used version control system.",
+    "anser": "GIT"
+  },
+  {
+    "ques": "A web development framework for creating dynamic web pages.",
+    "anser": "REACT"
+  },
+  {
+    "ques": "A popular cloud computing platform.",
+    "anser": "AWS"
+  },
+  {
+    "ques": "An object-oriented programming language developed by Sun Microsystems.",
+    "anser": "JAVA"
+  },
+  {
+    "ques": "A lightweight markup language often used for documentation.",
+    "anser": "MARKDOWN"
+  },
+  {
+    "ques": "A widely used relational database management system.",
+    "anser": "MYSQL"
+  },
+  {
+    "ques": "A scripting language commonly used for web development.",
+    "anser": "JAVASCRIPT"
+  },
+  {
+    "ques": "An open-source web server software.",
+    "anser": "APACHE"
+  },
+  {
+    "ques": "A popular text editor developed by Microsoft.",
+    "anser": "VSCODE"
+  },
+  {
+    "ques": "A server-side runtime environment for JavaScript.",
+    "anser": "NODE JS"
+  },
+  {
+    "ques": "A popular version of Linux.",
+    "anser": "UBUNTU"
+  },
+  {
+    "ques": "An integrated development environment for Java.",
+    "anser": "ECLIPSE"
+  },
+  {
+    "ques": "A widely used web browser developed by Google.",
+    "anser": "CHROME"
+  },
+  {
+    "ques": "A programming paradigm emphasizing the use of functions.",
+    "anser": "FUNCTIONAL PROGRAMMING"
+  },
+  {
+    "ques": "A widely used cloud-based collaboration platform.",
+    "anser": "SLACK"
+  },
+  {
+    "ques": "A popular data visualization library for Python.",
+    "anser": "MATPLOTLIB"
+  },
+  {
+    "ques": "A lightweight JavaScript library for building user interfaces.",
+    "anser": "REACT"
+  },
+  {
+    "ques": "A widely used container orchestration platform.",
+    "anser": "KUBERNETES"
+  }
+]

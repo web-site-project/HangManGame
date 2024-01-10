@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'DS-Digital Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DS-Digital Normal'), url('./webfonts/DS-DIGI.woff') format('woff');
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.GameSection {
+    width: 40%;
+    min-width: 400px;
+    border: 1px solid;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+
+.GameSection .HangGame {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.GameSection .HangGame .timer {
+    width: 20%;
+    min-width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: #b9b9b9;
+    color: #000;
+    border-radius: 50px;
+    font-family: 'DS-Digital Normal';
+}
+
+
+.GameSection .HangGame #question {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    line-height: normal;
+    margin: 20px 0;
+}
+
+.GameSection .HangGame .lines {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.GameSection .HangGame .lines div{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.GameSection .HangGame .lines div .line {
+    width: 25px;
+    height: 25px;
+    border-bottom: 1px solid;
+    text-align: center;
+    margin: 0 10px;
+    padding: 3px 0;
+    display: block;
+}
+
+.GameSection .alphabets {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.GameSection button {
+    padding: 5px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #bebebe;
+}
+
+.GameSection button[class="v"] {
+    grid-column-start: 2;
+}
+
+.GameSection button:hover {
+    background-color: rgb(87, 191, 198);
+}
+
+.GameSection button:active {
+    box-shadow: none;
+}
+
+.alert{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.StartBtn {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.StartBtn:before {
+    content: "";
+    background: linear-gradient(45deg,
+            #ff0000,
+            #ff7300,
+            #fffb00,
+            #48ff00,
+            #00ffd5,
+            #002bff,
+            #7a00ff,
+            #ff00c8,
+            #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowingStartBtn 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowingStartBtn {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.StartBtn:active {
+    color: #000;
+}
+
+.StartBtn:active:after {
+    background: transparent;
+}
+
+.StartBtn:hover:before {
+    opacity: 1;
+}
+
+.StartBtn:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
